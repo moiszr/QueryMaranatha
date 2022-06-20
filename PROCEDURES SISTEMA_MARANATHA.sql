@@ -320,10 +320,8 @@ USUARIO.CONTRASEÑA,
 ROL.ROL AS ROL
 FROM USUARIO
 INNER JOIN ROL ON USUARIO.IDROL = ROL.IDROL
-WHERE USUARIO = 'DANIELPBA' and CONTRASEÑA = '123456'
+WHERE USUARIO = @USUARIO and CONTRASEÑA = @CONTRASEÑA
 
-
-select * from USUARIO
 
 --------------------------------------------------------- STOREPROCEDURES CLIENTE ---------------------------------------------------------
 -- PROCEDIMIENTO ALMACENADO BUSCAR CLIENTE
